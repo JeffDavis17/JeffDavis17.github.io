@@ -1,0 +1,87 @@
+<html>
+<!--BATMAN SCRIPT-->
+<head>
+    <title>Jeff Davis Website</title>
+<script>
+
+    function input(){
+        var name = document.getElementById('TextBox').value;
+        var email = document.getElementById('TextBox2').value;
+         alert("Thank You " + name + ", <br/>" + email + " has been added to our Subscriber List")
+    }
+
+</script>
+</head>
+
+
+<body>
+    <style>table,th,td{border:1px solid black}</style>
+    <h1>Jeff Davis</h1>
+
+    <img src="guitarRoger.jpg" alt="Smiley face" align="right">
+    
+    <h2 style = 'background-color:rgb(170, 195, 247); color:rgb(47, 84, 105)'>About</h2>
+        <p>I enjoy playing music. I have been playing guitar for about 9 years,</p>
+        <p>and now ply mandolin and guitar in a folk band called The Sean Patrick Trio</p>
+        <br>
+    
+    <h2 style = 'background-color:rgb(170, 195, 247); color:rgb(21, 103, 150)'>Courses</h2>
+        <p>Here are some of the courses I've taken:</p> 
+        <table style = "width:60%";>
+            <tr>
+                <th>Course Number</th>
+                <th>Course Title</th>
+                <th>Semester Taken</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th {style = 'text-align: center;';}>For Credit</th>
+                <th></th>
+            </tr>
+            <tr style = 'background-color:rgb(188, 191, 194)'>
+                <td>ESSE 3600</td>
+                <td style = 'color:rgb(21, 103, 150)'>GIS</td>
+                <td>Fall 2018</td>
+            </tr>
+            <tr>
+                <td>ESSE 4020</td>
+                <td>Time Series</td>
+                <td>Fall 2018</td>
+            </tr>
+            <tr style = 'background-color:rgb(188, 191, 194)'>
+                <td>MATH 2271</td>
+                <td>Differential Equations</td>
+                <td>Winter 2017</td>
+            </tr>
+            <tr>
+                <td>ESSE 3610</td>
+                <td>Geodetic Concepts</td>
+                <td>Fall 2018</td>
+            </tr>
+            <tr style = 'background-color:rgb(188, 191, 194)'>
+                <td>ENVS 4010</td>
+                <td>Environmental Policy</td>
+                <td>Fall 2018</td>
+            </tr>
+            <tr>
+                <td>ESSE 3620</td>
+                <td>Adjustment Calculus</td>
+                <td>Winter 2018</td>
+            </tr>
+
+        </table>  
+    
+    
+    
+    
+
+    <h2 style = 'background-color:rgb(170, 195, 247); color:rgb(21, 103, 150)'>Subscribe to Newsletter</h2>
+        <p>Would love to recieve newsletter. Submit below!</p>
+        <p>Name: <input type = "text" id = "TextBox"></p>
+        <p>Email: <input type="text" id = "TextBox2"></p>
+
+        <button type = "button" onclick="input()">Submit</button><br/>
+        <p id = "nameEnter"></p>
+</body>
+
+</html>    
